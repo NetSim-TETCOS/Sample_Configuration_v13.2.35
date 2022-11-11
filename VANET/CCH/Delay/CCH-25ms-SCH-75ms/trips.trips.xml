@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- generated on 2022-07-14 10:19:27.038363 by randomTrips.py v1_12_0+0000-800cb422fa4
+  options: -n road.net.xml -e 8 <doubleminus>route-file trips.xml
+-->
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+</routes>

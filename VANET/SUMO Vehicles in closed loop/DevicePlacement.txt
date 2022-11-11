@@ -1,0 +1,11 @@
+#Device Placement File
+Env length = 500.0
+Step = 0.4
+Simulation time = 300
+Number of device placed = 5
+#Device_Number (X-Pos, Y-Pos)
+1 carflow.0 (194.3238641344047, 296.5838641344047)
+2 carflow.1 (194.3238641344047, 296.5838641344047)
+3 carflow.2 (194.3238641344047, 296.5838641344047)
+4 carflow.3 (194.3238641344047, 296.5838641344047)
+5 carflow.4 (194.3238641344047, 296.5838641344047)

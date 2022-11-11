@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<NetSim_Metrics>
+ <!--NETSIM_METRICS-->
+ <MENU Name="Link_Metrics">
+  <TABLE name="Link_Metrics">
+   <TH name="Link ID" isShow="true"/>
+   <TH name="Link Throughput Plot" isShow="true"/>
+   <TH name="Packets Transmitted" isShow="true">
+    <TH name="Data"/>
+    <TH name="Control"/>
+   </TH>
+   <TH name="Packets Errored" isShow="true">
+    <TH name="Data"/>
+    <TH name="Control"/>
+   </TH>
+   <TH name="Packets Collided" isShow="true">
+    <TH name="Data"/>
+    <TH name="Control"/>
+   </TH>
+   <TH name="Bytes Transmitted(bytes)" isShow="false"/>
+   <TH name="Payload Transmitted(bytes)" isShow="false"/>
+   <TH name="Overhead Transmitted(bytes)" isShow="false"/>
+   <TR>
+    <TC Value="All"/>
+    <TC Value="NA"/>
+    <TC Value="126968"/>
+    <TC Value="966"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="2068188"/>
+    <TC Value="1396672"/>
+    <TC Value="671516"/>
+   </TR>
+   <TR>
+    <TC Value="1"/>
+    <TC>
+     <LINK onClick="Link_1_Throughput" name="Link_throughput"/>
+    </TC>
+    <TC Value="63484"/>
+    <TC Value="668"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="1034279"/>
+    <TC Value="698336"/>
+    <TC Value="335943"/>
+   </TR>
+   <TR>
+    <TC Value="2"/>
+    <TC>
+     <LINK onClick="Link_2_Throughput" name="Link_throughput"/>
+    </TC>
+    <TC Value="63484"/>
+    <TC Value="298"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="1033909"/>
+    <TC Value="698336"/>
+    <TC Value="335573"/>
+   </TR>
+  </TABLE>
+ </MENU>
+ <MENU Name="Queue_Metrics">
+  <TABLE name="Queue_Metrics">
+   <TH name="Device_id" isShow="true"/>
+   <TH name="Port_id" isShow="true"/>
+   <TH name="Queued_packet" isShow="true"/>
+   <TH name="Dequeued_packet" isShow="true"/>
+   <TH name="Dropped_packet" isShow="true"/>
+  </TABLE>
+ </MENU>
+ <MENU Name="IP_Metrics">
+  <TABLE name="IP_Metrics">
+   <TH name="Device Id" isShow="true"/>
+   <TH name="Packet sent" isShow="true"/>
+   <TH name="Packet forwarded" isShow="true"/>
+   <TH name="Packet received" isShow="true"/>
+   <TH name="Packet discarded" isShow="false"/>
+   <TH name="TTL expired" isShow="false"/>
+   <TH name="Firewall blocked" isShow="false"/>
+   <TR>
+    <TC Value="2"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+   </TR>
+  </TABLE>
+ </MENU>
+ <MENU Name="IP_Forwarding_Table">
+  <MENU Name="MSC_2">
+   <TABLE name="MSC_2">
+    <TH name="Network Destination" isShow="true"/>
+    <TH name="Netmask/Prefix len" isShow="true"/>
+    <TH name="Gateway" isShow="true"/>
+    <TH name="Interface" isShow="true"/>
+    <TH name="Metrics" isShow="false"/>
+    <TH name="Type" isShow="false"/>
+    <TR>
+     <TC Value="11.1.0.0"/>
+     <TC Value="255.255.0.0"/>
+     <TC Value="on-link"/>
+     <TC Value="11.1.1.1 "/>
+     <TC Value="300"/>
+     <TC Value="LOCAL"/>
+    </TR>
+    <TR>
+     <TC Value="224.0.0.1"/>
+     <TC Value="255.255.255.255"/>
+     <TC Value="on-link"/>
+     <TC Value="11.1.1.1 "/>
+     <TC Value="306"/>
+     <TC Value="MULTICAST"/>
+    </TR>
+    <TR>
+     <TC Value="224.0.0.0"/>
+     <TC Value="240.0.0.0"/>
+     <TC Value="on-link"/>
+     <TC Value="11.1.1.1 "/>
+     <TC Value="306"/>
+     <TC Value="MULTICAST"/>
+    </TR>
+    <TR>
+     <TC Value="255.255.255.255"/>
+     <TC Value="255.255.255.255"/>
+     <TC Value="on-link"/>
+     <TC Value="11.1.1.1 "/>
+     <TC Value="999"/>
+     <TC Value="BROADCAST"/>
+    </TR>
+   </TABLE>
+  </MENU>
+ </MENU>
+ <MENU Name="Cellular Metrics">
+  <MENU Name="MS Metrics">
+   <TABLE name="MS Metrics">
+    <TH name="MS Id" isShow="true"/>
+    <TH name="Call Generated" isShow="false"/>
+    <TH name="Call Blocked" isShow="false"/>
+    <TH name="Call Blocking probability" isShow="true"/>
+    <TH name="Channel request sent" isShow="false"/>
+    <TH name="Call request sent" isShow="false"/>
+    <TH name="Call request received" isShow="false"/>
+    <TH name="Call accepted" isShow="false"/>
+    <TH name="Call rejected" isShow="false"/>
+    <TH name="Handover request" isShow="false"/>
+    <TH name="Call dropped" isShow="false"/>
+    <TH name="Call dropping probability" isShow="true"/>
+    <TR>
+     <TC Value="3"/>
+     <TC Value="16"/>
+     <TC Value="8"/>
+     <TC Value="0.500"/>
+     <TC Value="8"/>
+     <TC Value="8"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0.000"/>
+    </TR>
+    <TR>
+     <TC Value="4"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0.000"/>
+     <TC Value="8"/>
+     <TC Value="0"/>
+     <TC Value="8"/>
+     <TC Value="0"/>
+     <TC Value="8"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0.000"/>
+    </TR>
+    <TR>
+     <TC Value="5"/>
+     <TC Value="22"/>
+     <TC Value="11"/>
+     <TC Value="0.500"/>
+     <TC Value="11"/>
+     <TC Value="11"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0.000"/>
+    </TR>
+    <TR>
+     <TC Value="6"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0.000"/>
+     <TC Value="11"/>
+     <TC Value="0"/>
+     <TC Value="11"/>
+     <TC Value="0"/>
+     <TC Value="11"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0.000"/>
+    </TR>
+    <TR>
+     <TC Value="7"/>
+     <TC Value="10"/>
+     <TC Value="5"/>
+     <TC Value="0.500"/>
+     <TC Value="5"/>
+     <TC Value="5"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0.000"/>
+    </TR>
+    <TR>
+     <TC Value="8"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0.000"/>
+     <TC Value="5"/>
+     <TC Value="0"/>
+     <TC Value="5"/>
+     <TC Value="0"/>
+     <TC Value="5"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0.000"/>
+    </TR>
+    <TR>
+     <TC Value="9"/>
+     <TC Value="2"/>
+     <TC Value="0"/>
+     <TC Value="0.000"/>
+     <TC Value="1"/>
+     <TC Value="1"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0.000"/>
+    </TR>
+    <TR>
+     <TC Value="10"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0.000"/>
+     <TC Value="1"/>
+     <TC Value="0"/>
+     <TC Value="1"/>
+     <TC Value="1"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0.000"/>
+    </TR>
+    <TR>
+     <TC Value="11"/>
+     <TC Value="30"/>
+     <TC Value="14"/>
+     <TC Value="0.467"/>
+     <TC Value="15"/>
+     <TC Value="14"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0.000"/>
+    </TR>
+    <TR>
+     <TC Value="12"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0.000"/>
+     <TC Value="14"/>
+     <TC Value="0"/>
+     <TC Value="14"/>
+     <TC Value="1"/>
+     <TC Value="13"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0.000"/>
+    </TR>
+    <TR>
+     <TC Value="13"/>
+     <TC Value="2"/>
+     <TC Value="0"/>
+     <TC Value="0.000"/>
+     <TC Value="1"/>
+     <TC Value="1"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0.000"/>
+    </TR>
+    <TR>
+     <TC Value="14"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0.000"/>
+     <TC Value="1"/>
+     <TC Value="0"/>
+     <TC Value="1"/>
+     <TC Value="1"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0.000"/>
+    </TR>
+    <TR>
+     <TC Value="15"/>
+     <TC Value="28"/>
+     <TC Value="14"/>
+     <TC Value="0.500"/>
+     <TC Value="14"/>
+     <TC Value="14"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0.000"/>
+    </TR>
+    <TR>
+     <TC Value="16"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0.000"/>
+     <TC Value="14"/>
+     <TC Value="0"/>
+     <TC Value="14"/>
+     <TC Value="0"/>
+     <TC Value="14"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0.000"/>
+    </TR>
+    <TR>
+     <TC Value="17"/>
+     <TC Value="2"/>
+     <TC Value="0"/>
+     <TC Value="0.000"/>
+     <TC Value="1"/>
+     <TC Value="1"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0.000"/>
+    </TR>
+    <TR>
+     <TC Value="18"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0.000"/>
+     <TC Value="1"/>
+     <TC Value="0"/>
+     <TC Value="1"/>
+     <TC Value="1"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0.000"/>
+    </TR>
+    <TR>
+     <TC Value="19"/>
+     <TC Value="18"/>
+     <TC Value="9"/>
+     <TC Value="0.500"/>
+     <TC Value="9"/>
+     <TC Value="9"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0.000"/>
+    </TR>
+    <TR>
+     <TC Value="20"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0.000"/>
+     <TC Value="9"/>
+     <TC Value="0"/>
+     <TC Value="9"/>
+     <TC Value="0"/>
+     <TC Value="9"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0.000"/>
+    </TR>
+    <TR>
+     <TC Value="21"/>
+     <TC Value="20"/>
+     <TC Value="10"/>
+     <TC Value="0.500"/>
+     <TC Value="10"/>
+     <TC Value="10"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0.000"/>
+    </TR>
+    <TR>
+     <TC Value="22"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0.000"/>
+     <TC Value="10"/>
+     <TC Value="0"/>
+     <TC Value="10"/>
+     <TC Value="0"/>
+     <TC Value="10"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0.000"/>
+    </TR>
+   </TABLE>
+  </MENU>
+  <MENU Name="Channel Metrics">
+   <TABLE name="Channel Metrics">
+    <TH name="BS Id" isShow="true"/>
+    <TH name="Channel Id" isShow="true"/>
+    <TH name="Uplink frequency(MHz)" isShow="true"/>
+    <TH name="Downlink frequency(MHz)" isShow="true"/>
+    <TH name="Time Slot" isShow="false"/>
+    <TR>
+     <TC Value="1"/>
+     <TC Value="1"/>
+     <TC Value="890.000-890.200"/>
+     <TC Value="935.000-935.200"/>
+     <TC Value="0"/>
+    </TR>
+    <TR>
+     <TC Value="1"/>
+     <TC Value="2"/>
+     <TC Value="890.000-890.200"/>
+     <TC Value="935.000-935.200"/>
+     <TC Value="1"/>
+    </TR>
+    <TR>
+     <TC Value="1"/>
+     <TC Value="3"/>
+     <TC Value="890.000-890.200"/>
+     <TC Value="935.000-935.200"/>
+     <TC Value="2"/>
+    </TR>
+    <TR>
+     <TC Value="1"/>
+     <TC Value="4"/>
+     <TC Value="890.000-890.200"/>
+     <TC Value="935.000-935.200"/>
+     <TC Value="3"/>
+    </TR>
+    <TR>
+     <TC Value="1"/>
+     <TC Value="5"/>
+     <TC Value="890.000-890.200"/>
+     <TC Value="935.000-935.200"/>
+     <TC Value="4"/>
+    </TR>
+    <TR>
+     <TC Value="1"/>
+     <TC Value="6"/>
+     <TC Value="890.000-890.200"/>
+     <TC Value="935.000-935.200"/>
+     <TC Value="5"/>
+    </TR>
+    <TR>
+     <TC Value="1"/>
+     <TC Value="7"/>
+     <TC Value="890.000-890.200"/>
+     <TC Value="935.000-935.200"/>
+     <TC Value="6"/>
+    </TR>
+    <TR>
+     <TC Value="1"/>
+     <TC Value="8"/>
+     <TC Value="890.000-890.200"/>
+     <TC Value="935.000-935.200"/>
+     <TC Value="7"/>
+    </TR>
+   </TABLE>
+  </MENU>
+ </MENU>
+ <MENU Name="Application_Metrics">
+  <TABLE name="Application_Metrics">
+   <TH name="Application ID" isShow="true"/>
+   <TH name="Throughput Plot" isShow="true"/>
+   <TH name="Application Name" isShow="true"/>
+   <TH name="Source ID" isShow="false"/>
+   <TH name="Destination ID" isShow="false"/>
+   <TH name="Packets Generated" isShow="true"/>
+   <TH name="Packets Received" isShow="true"/>
+   <TH name="Payload generated (bytes)" isShow="false"/>
+   <TH name="Payload received (bytes)" isShow="false"/>
+   <TH name="Throughput (Mbps)" isShow="true"/>
+   <TH name="Delay (microsec)" isShow="true"/>
+   <TH name="Jitter (microsec)" isShow="true"/>
+   <TR>
+    <TC Value="1"/>
+    <TC>
+     <LINK onClick="App1_ERLANG_CALL_Throughput" name="Application_Throughput_plot"/>
+    </TC>
+    <TC Value="App1_ERLANG_CALL"/>
+    <TC Value="3"/>
+    <TC Value="4"/>
+    <TC Value="24"/>
+    <TC Value="0"/>
+    <TC Value="792"/>
+    <TC Value="0"/>
+    <TC Value="0.000000"/>
+    <TC Value="0.000000"/>
+    <TC Value="0.000000"/>
+   </TR>
+   <TR>
+    <TC Value="2"/>
+    <TC>
+     <LINK onClick="App2_ERLANG_CALL_Throughput" name="Application_Throughput_plot"/>
+    </TC>
+    <TC Value="App2_ERLANG_CALL"/>
+    <TC Value="5"/>
+    <TC Value="6"/>
+    <TC Value="33"/>
+    <TC Value="0"/>
+    <TC Value="1089"/>
+    <TC Value="0"/>
+    <TC Value="0.000000"/>
+    <TC Value="0.000000"/>
+    <TC Value="0.000000"/>
+   </TR>
+   <TR>
+    <TC Value="3"/>
+    <TC>
+     <LINK onClick="App3_ERLANG_CALL_Throughput" name="Application_Throughput_plot"/>
+    </TC>
+    <TC Value="App3_ERLANG_CALL"/>
+    <TC Value="7"/>
+    <TC Value="8"/>
+    <TC Value="15"/>
+    <TC Value="0"/>
+    <TC Value="495"/>
+    <TC Value="0"/>
+    <TC Value="0.000000"/>
+    <TC Value="0.000000"/>
+    <TC Value="0.000000"/>
+   </TR>
+   <TR>
+    <TC Value="4"/>
+    <TC>
+     <LINK onClick="App4_ERLANG_CALL_Throughput" name="Application_Throughput_plot"/>
+    </TC>
+    <TC Value="App4_ERLANG_CALL"/>
+    <TC Value="9"/>
+    <TC Value="10"/>
+    <TC Value="4798"/>
+    <TC Value="3591"/>
+    <TC Value="158334"/>
+    <TC Value="118503"/>
+    <TC Value="0.009480"/>
+    <TC Value="13000180.779308"/>
+    <TC Value="8683.076766"/>
+   </TR>
+   <TR>
+    <TC Value="5"/>
+    <TC>
+     <LINK onClick="App5_ERLANG_CALL_Throughput" name="Application_Throughput_plot"/>
+    </TC>
+    <TC Value="App5_ERLANG_CALL"/>
+    <TC Value="11"/>
+    <TC Value="12"/>
+    <TC Value="219"/>
+    <TC Value="177"/>
+    <TC Value="7227"/>
+    <TC Value="5841"/>
+    <TC Value="0.000467"/>
+    <TC Value="731471.264396"/>
+    <TC Value="7690.000000"/>
+   </TR>
+   <TR>
+    <TC Value="6"/>
+    <TC>
+     <LINK onClick="App6_ERLANG_CALL_Throughput" name="Application_Throughput_plot"/>
+    </TC>
+    <TC Value="App6_ERLANG_CALL"/>
+    <TC Value="13"/>
+    <TC Value="14"/>
+    <TC Value="4632"/>
+    <TC Value="3483"/>
+    <TC Value="152856"/>
+    <TC Value="114939"/>
+    <TC Value="0.009195"/>
+    <TC Value="12072709.832094"/>
+    <TC Value="8809.627322"/>
+   </TR>
+   <TR>
+    <TC Value="7"/>
+    <TC>
+     <LINK onClick="App7_ERLANG_CALL_Throughput" name="Application_Throughput_plot"/>
+    </TC>
+    <TC Value="App7_ERLANG_CALL"/>
+    <TC Value="15"/>
+    <TC Value="16"/>
+    <TC Value="42"/>
+    <TC Value="0"/>
+    <TC Value="1386"/>
+    <TC Value="0"/>
+    <TC Value="0.000000"/>
+    <TC Value="0.000000"/>
+    <TC Value="0.000000"/>
+   </TR>
+   <TR>
+    <TC Value="8"/>
+    <TC>
+     <LINK onClick="App8_ERLANG_CALL_Throughput" name="Application_Throughput_plot"/>
+    </TC>
+    <TC Value="App8_ERLANG_CALL"/>
+    <TC Value="17"/>
+    <TC Value="18"/>
+    <TC Value="3885"/>
+    <TC Value="3328"/>
+    <TC Value="128205"/>
+    <TC Value="109824"/>
+    <TC Value="0.008786"/>
+    <TC Value="10608384.723919"/>
+    <TC Value="12075.236513"/>
+   </TR>
+   <TR>
+    <TC Value="9"/>
+    <TC>
+     <LINK onClick="App9_ERLANG_CALL_Throughput" name="Application_Throughput_plot"/>
+    </TC>
+    <TC Value="App9_ERLANG_CALL"/>
+    <TC Value="19"/>
+    <TC Value="20"/>
+    <TC Value="27"/>
+    <TC Value="0"/>
+    <TC Value="891"/>
+    <TC Value="0"/>
+    <TC Value="0.000000"/>
+    <TC Value="0.000000"/>
+    <TC Value="0.000000"/>
+   </TR>
+   <TR>
+    <TC Value="10"/>
+    <TC>
+     <LINK onClick="App10_ERLANG_CALL_Throughput" name="Application_Throughput_plot"/>
+    </TC>
+    <TC Value="App10_ERLANG_CALL"/>
+    <TC Value="21"/>
+    <TC Value="22"/>
+    <TC Value="30"/>
+    <TC Value="0"/>
+    <TC Value="990"/>
+    <TC Value="0"/>
+    <TC Value="0.000000"/>
+    <TC Value="0.000000"/>
+    <TC Value="0.000000"/>
+   </TR>
+  </TABLE>
+ </MENU>
+<MENU Name="Plots">
+ <MENU Name="Link_Throughput">
+  <MENU Name="Link_1_Throughput (Bi-directional Aggregated)">
+   <PLOT data_file_name="C:\Users\Navya\AppData\Local\Temp\NetSimCoreAuto\plot_Link_1_Throughput (Bi-directional Aggregated).txt" name="Link_1_Throughput (Bi-directional Aggregated)"/>
+  </MENU>
+  <MENU Name="Link_2_Throughput (Bi-directional Aggregated)">
+   <PLOT data_file_name="C:\Users\Navya\AppData\Local\Temp\NetSimCoreAuto\plot_Link_2_Throughput (Bi-directional Aggregated).txt" name="Link_2_Throughput (Bi-directional Aggregated)"/>
+  </MENU>
+ </MENU>
+ <MENU Name="Application_Throughput">
+  <MENU Name="App1_ERLANG_CALL_Throughput">
+   <PLOT data_file_name="C:\Users\Navya\AppData\Local\Temp\NetSimCoreAuto\plot_App1_ERLANG_CALL_Throughput.txt" name="App1_ERLANG_CALL_Throughput"/>
+  </MENU>
+  <MENU Name="App2_ERLANG_CALL_Throughput">
+   <PLOT data_file_name="C:\Users\Navya\AppData\Local\Temp\NetSimCoreAuto\plot_App2_ERLANG_CALL_Throughput.txt" name="App2_ERLANG_CALL_Throughput"/>
+  </MENU>
+  <MENU Name="App3_ERLANG_CALL_Throughput">
+   <PLOT data_file_name="C:\Users\Navya\AppData\Local\Temp\NetSimCoreAuto\plot_App3_ERLANG_CALL_Throughput.txt" name="App3_ERLANG_CALL_Throughput"/>
+  </MENU>
+  <MENU Name="App4_ERLANG_CALL_Throughput">
+   <PLOT data_file_name="C:\Users\Navya\AppData\Local\Temp\NetSimCoreAuto\plot_App4_ERLANG_CALL_Throughput.txt" name="App4_ERLANG_CALL_Throughput"/>
+  </MENU>
+  <MENU Name="App5_ERLANG_CALL_Throughput">
+   <PLOT data_file_name="C:\Users\Navya\AppData\Local\Temp\NetSimCoreAuto\plot_App5_ERLANG_CALL_Throughput.txt" name="App5_ERLANG_CALL_Throughput"/>
+  </MENU>
+  <MENU Name="App6_ERLANG_CALL_Throughput">
+   <PLOT data_file_name="C:\Users\Navya\AppData\Local\Temp\NetSimCoreAuto\plot_App6_ERLANG_CALL_Throughput.txt" name="App6_ERLANG_CALL_Throughput"/>
+  </MENU>
+  <MENU Name="App7_ERLANG_CALL_Throughput">
+   <PLOT data_file_name="C:\Users\Navya\AppData\Local\Temp\NetSimCoreAuto\plot_App7_ERLANG_CALL_Throughput.txt" name="App7_ERLANG_CALL_Throughput"/>
+  </MENU>
+  <MENU Name="App8_ERLANG_CALL_Throughput">
+   <PLOT data_file_name="C:\Users\Navya\AppData\Local\Temp\NetSimCoreAuto\plot_App8_ERLANG_CALL_Throughput.txt" name="App8_ERLANG_CALL_Throughput"/>
+  </MENU>
+  <MENU Name="App9_ERLANG_CALL_Throughput">
+   <PLOT data_file_name="C:\Users\Navya\AppData\Local\Temp\NetSimCoreAuto\plot_App9_ERLANG_CALL_Throughput.txt" name="App9_ERLANG_CALL_Throughput"/>
+  </MENU>
+  <MENU Name="App10_ERLANG_CALL_Throughput">
+   <PLOT data_file_name="C:\Users\Navya\AppData\Local\Temp\NetSimCoreAuto\plot_App10_ERLANG_CALL_Throughput.txt" name="App10_ERLANG_CALL_Throughput"/>
+  </MENU>
+ </MENU>
+</MENU>
+</NetSim_Metrics>

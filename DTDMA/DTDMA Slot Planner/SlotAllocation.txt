@@ -1,0 +1,7 @@
+link=1,MANET_1
+net=1,
+Wireless_Node_1,1,
+Wireless_Node_3,2,
+Wireless_Node_4,3,
+Wireless_Node_2,4,
+Wireless_Node_5,5,

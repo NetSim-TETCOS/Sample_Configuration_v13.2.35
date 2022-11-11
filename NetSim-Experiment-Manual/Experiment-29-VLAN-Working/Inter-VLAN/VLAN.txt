@@ -1,0 +1,9 @@
+# Invalid lines in this file are ignored by the GUI.
+# Invalid entry may lead unexpected behavior by NetSim simulation engine.
+VLAN=2,VLAN_2
+L3_Switch_1,1,10.0.0.3,Wired_Node_2,1,10.0.0.4,
+L3_Switch_1,2,10.1.0.3,Wired_Node_3,1,10.1.0.4,
+VLAN=3,VLAN_3
+L3_Switch_1,3,11.2.0.3,Wired_Node_4,1,11.2.0.4,
+L3_Switch_1,4,11.3.0.3,Wired_Node_5,1,11.3.0.4,
+L3_Switch_1,5,11.4.0.3,Wired_Node_6,1,11.4.0.4,

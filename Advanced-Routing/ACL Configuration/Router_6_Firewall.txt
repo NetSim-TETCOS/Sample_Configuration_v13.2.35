@@ -1,0 +1,6 @@
+# Invalid lines in this file are ignored by the GUI.
+# Invalid entry may lead unexpected behavior by NetSim simulation engine.
+PERMIT OUTBOUND UDP ANY ANY 0 0 3
+PERMIT OUTBOUND TCP ANY ANY 0 0 3
+PERMIT INBOUND TCP ANY ANY 0 0 3
+DENY BOTH ANY ANY ANY 0 0 3

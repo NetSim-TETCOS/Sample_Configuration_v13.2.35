@@ -1,0 +1,11 @@
+# comment line
+# sample file for IOT
+Wireless_Sensor,IOT_Sensors,0,50
+Wireless_Sensor,IOT_Sensors,50,0
+Wireless_Sensor,IOT_Sensors,0,0
+Wireless_Sensor,IOT_Sensors,50,50
+Wireless_Sensor,IOT_Sensors,10,25
+Wireless_Sensor,IOT_Sensors,50,25
+Low_Pan_Gateway,LOWPAN_Gateway,100,100
+Router,IOT_ROUTER,150,100
+Wired_Node,WIREDNODE,200,150
