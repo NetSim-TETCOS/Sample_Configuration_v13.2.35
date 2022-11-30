@@ -1,4 +1,0 @@
-# Invalid lines in this file are ignored by the GUI.
-# Invalid entry may lead unexpected behavior by NetSim simulation engine.
-PERMIT BOTH TCP 11.1.1.2/31 11.3.1.2/31 0 0 3
-DENY OUTBOUND UDP ANY ANY 0 0 1

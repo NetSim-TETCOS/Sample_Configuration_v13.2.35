@@ -1,7 +1,0 @@
-# comment line
-# sample file for WSN
-Wireless_Sensor,Sensors,10,40
-Wireless_Sensor,Sensors,40,10
-Wireless_Sensor,Sensors,10,10
-Wireless_Sensor,Sensors,40,40
-Sink_Node,SinkNode,50,50

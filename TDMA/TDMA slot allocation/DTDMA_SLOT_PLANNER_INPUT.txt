@@ -1,8 +1,0 @@
-manet>MANET_1>1>
-Netid>1>
-Wireless_Node_1
-Wireless_Node_2
-Wireless_Node_3
-Wireless_Node_4
-Wireless_Node_5
-Wireless_Node_6

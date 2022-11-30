@@ -1,6 +1,0 @@
-# comment line
-# sample file for manet/multiple manet
-Wireless_Node,WIRELESSNODE,100,150
-Wireless_Node,WIRELESSNODE,150,100
-Wireless_Node,WIRELESSNODE,100,100
-Wireless_Node,WIRELESSNODE,50,50
