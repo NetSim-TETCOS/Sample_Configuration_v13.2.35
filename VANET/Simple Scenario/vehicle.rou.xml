@@ -1,0 +1,18 @@
+<routes>
+  <vType id="type1" accel="0.8" decel="4.5" sigma="0.5" length="5" maxSpeed="10"/>
+  <vehicle id="Vehicle_1" type="type1" depart="0.00">
+    <route edges="-gneE10 -gneE9 gneE4 -gneE1"/>
+  </vehicle>
+  <vehicle id="Vehicle_2" type="type1" depart="2.00">
+    <route edges="gneE11 -gneE5 -gneE4 gneE9"/>
+  </vehicle>
+  <vehicle id="Vehicle_3" type="type1" depart="3.00">
+    <route edges="gneE8 gneE4 gneE2 gneE7"/>
+  </vehicle>
+  <vehicle id="Vehicle_4" type="type1" depart="4.00">
+    <route edges="-gneE13 -gneE12 -gneE11"/>
+  </vehicle>
+  <vehicle id="Vehicle_5" type="type1" depart="5.00">
+    <route edges="gneE1 gneE2 -gneE6 gneE10"/>
+  </vehicle>
+</routes>

@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<NetSim_Metrics>
+ <!--NETSIM_METRICS-->
+ <MENU Name="Link_Metrics">
+  <TABLE name="Link_Metrics">
+   <TH name="Link ID" isShow="true"/>
+   <TH name="Link Throughput Plot" isShow="true"/>
+   <TH name="Packets Transmitted" isShow="true">
+    <TH name="Data"/>
+    <TH name="Control"/>
+   </TH>
+   <TH name="Packets Errored" isShow="true">
+    <TH name="Data"/>
+    <TH name="Control"/>
+   </TH>
+   <TH name="Packets Collided" isShow="true">
+    <TH name="Data"/>
+    <TH name="Control"/>
+   </TH>
+   <TH name="Bytes Transmitted(bytes)" isShow="false"/>
+   <TH name="Payload Transmitted(bytes)" isShow="false"/>
+   <TH name="Overhead Transmitted(bytes)" isShow="false"/>
+   <TR>
+    <TC Value="All"/>
+    <TC Value="NA"/>
+    <TC Value="129461"/>
+    <TC Value="19601"/>
+    <TC Value="13"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="18832742"/>
+    <TC Value="12599640"/>
+    <TC Value="6233102"/>
+   </TR>
+   <TR>
+    <TC Value="1"/>
+    <TC>
+     <LINK onClick="Link_1_Throughput" name="Link_throughput"/>
+    </TC>
+    <TC Value="43155"/>
+    <TC Value="19601"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="5771738"/>
+    <TC Value="4200420"/>
+    <TC Value="1571318"/>
+   </TR>
+   <TR>
+    <TC Value="2"/>
+    <TC>
+     <LINK onClick="Link_2_Throughput" name="Link_throughput"/>
+    </TC>
+    <TC Value="43155"/>
+    <TC Value="0"/>
+    <TC Value="4"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="6530790"/>
+    <TC Value="4200060"/>
+    <TC Value="2330730"/>
+   </TR>
+   <TR>
+    <TC Value="3"/>
+    <TC>
+     <LINK onClick="Link_3_Throughput" name="Link_throughput"/>
+    </TC>
+    <TC Value="43151"/>
+    <TC Value="0"/>
+    <TC Value="9"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="6530214"/>
+    <TC Value="4199160"/>
+    <TC Value="2331054"/>
+   </TR>
+  </TABLE>
+ </MENU>
+ <MENU Name="Queue_Metrics">
+  <TABLE name="Queue_Metrics">
+   <TH name="Device_id" isShow="true"/>
+   <TH name="Port_id" isShow="true"/>
+   <TH name="Queued_packet" isShow="true"/>
+   <TH name="Dequeued_packet" isShow="true"/>
+   <TH name="Dropped_packet" isShow="true"/>
+  </TABLE>
+ </MENU>
+ <MENU Name="TCP_Metrics">
+  <TABLE name="TCP_Metrics">
+   <TH name="Source" isShow="true"/>
+   <TH name="Destination" isShow="true"/>
+   <TH name="Local Address" isShow="false"/>
+   <TH name="Remote Address" isShow="false"/>
+   <TH name="Syn Sent" isShow="false"/>
+   <TH name="Syn-Ack Sent" isShow="false"/>
+   <TH name="Segment Sent" isShow="true"/>
+   <TH name="Segment Received" isShow="true"/>
+   <TH name="Segment Retransmitted" isShow="false"/>
+   <TH name="Ack Sent" isShow="true"/>
+   <TH name="Ack Received" isShow="true"/>
+   <TH name="Duplicate segment received" isShow="false"/>
+   <TH name="Out of order segment received" isShow="false"/>
+   <TH name="Duplicate ack received" isShow="true"/>
+   <TH name="Times RTO expired" isShow="false"/>
+   <TR>
+    <TC Value="CR_CPE_2"/>
+    <TC Value="ANY_DEVICE"/>
+    <TC Value="11.1.1.2:0"/>
+    <TC Value="0.0.0.0:0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+   </TR>
+   <TR>
+    <TC Value="CR_CPE_3"/>
+    <TC Value="ANY_DEVICE"/>
+    <TC Value="11.1.1.3:0"/>
+    <TC Value="0.0.0.0:0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+   </TR>
+   <TR>
+    <TC Value="ROUTER_4"/>
+    <TC Value="ANY_DEVICE"/>
+    <TC Value="11.1.1.1:0"/>
+    <TC Value="0.0.0.0:0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+   </TR>
+   <TR>
+    <TC Value="WIRED_NODE_5"/>
+    <TC Value="ANY_DEVICE"/>
+    <TC Value="11.2.1.2:0"/>
+    <TC Value="0.0.0.0:0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+   </TR>
+  </TABLE>
+ </MENU>
+ <MENU Name="IP_Metrics">
+  <TABLE name="IP_Metrics">
+   <TH name="Device Id" isShow="true"/>
+   <TH name="Packet sent" isShow="true"/>
+   <TH name="Packet forwarded" isShow="true"/>
+   <TH name="Packet received" isShow="true"/>
+   <TH name="Packet discarded" isShow="false"/>
+   <TH name="TTL expired" isShow="false"/>
+   <TH name="Firewall blocked" isShow="false"/>
+   <TR>
+    <TC Value="2"/>
+    <TC Value="45000"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+   </TR>
+   <TR>
+    <TC Value="3"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+   </TR>
+   <TR>
+    <TC Value="4"/>
+    <TC Value="43151"/>
+    <TC Value="43151"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+   </TR>
+   <TR>
+    <TC Value="5"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="43142"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+    <TC Value="0"/>
+   </TR>
+  </TABLE>
+ </MENU>
+ <MENU Name="IP_Forwarding_Table">
+  <MENU Name="CR_CPE_2">
+   <TABLE name="CR_CPE_2">
+    <TH name="Network Destination" isShow="true"/>
+    <TH name="Netmask/Prefix len" isShow="true"/>
+    <TH name="Gateway" isShow="true"/>
+    <TH name="Interface" isShow="true"/>
+    <TH name="Metrics" isShow="false"/>
+    <TH name="Type" isShow="false"/>
+    <TR>
+     <TC Value="11.1.0.0"/>
+     <TC Value="255.255.0.0"/>
+     <TC Value="on-link"/>
+     <TC Value="11.1.1.2 "/>
+     <TC Value="300"/>
+     <TC Value="LOCAL"/>
+    </TR>
+    <TR>
+     <TC Value="224.0.0.1"/>
+     <TC Value="255.255.255.255"/>
+     <TC Value="on-link"/>
+     <TC Value="11.1.1.2 "/>
+     <TC Value="306"/>
+     <TC Value="MULTICAST"/>
+    </TR>
+    <TR>
+     <TC Value="224.0.0.0"/>
+     <TC Value="240.0.0.0"/>
+     <TC Value="on-link"/>
+     <TC Value="11.1.1.2 "/>
+     <TC Value="306"/>
+     <TC Value="MULTICAST"/>
+    </TR>
+    <TR>
+     <TC Value="255.255.255.255"/>
+     <TC Value="255.255.255.255"/>
+     <TC Value="on-link"/>
+     <TC Value="11.1.1.2 "/>
+     <TC Value="999"/>
+     <TC Value="BROADCAST"/>
+    </TR>
+    <TR>
+     <TC Value="0.0.0.0"/>
+     <TC Value="0.0.0.0"/>
+     <TC Value="11.1.1.1"/>
+     <TC Value="11.1.1.2 "/>
+     <TC Value="999"/>
+     <TC Value="DEFAULT"/>
+    </TR>
+   </TABLE>
+  </MENU>
+  <MENU Name="CR_CPE_3">
+   <TABLE name="CR_CPE_3">
+    <TH name="Network Destination" isShow="true"/>
+    <TH name="Netmask/Prefix len" isShow="true"/>
+    <TH name="Gateway" isShow="true"/>
+    <TH name="Interface" isShow="true"/>
+    <TH name="Metrics" isShow="false"/>
+    <TH name="Type" isShow="false"/>
+    <TR>
+     <TC Value="11.1.0.0"/>
+     <TC Value="255.255.0.0"/>
+     <TC Value="on-link"/>
+     <TC Value="11.1.1.3 "/>
+     <TC Value="300"/>
+     <TC Value="LOCAL"/>
+    </TR>
+    <TR>
+     <TC Value="224.0.0.1"/>
+     <TC Value="255.255.255.255"/>
+     <TC Value="on-link"/>
+     <TC Value="11.1.1.3 "/>
+     <TC Value="306"/>
+     <TC Value="MULTICAST"/>
+    </TR>
+    <TR>
+     <TC Value="224.0.0.0"/>
+     <TC Value="240.0.0.0"/>
+     <TC Value="on-link"/>
+     <TC Value="11.1.1.3 "/>
+     <TC Value="306"/>
+     <TC Value="MULTICAST"/>
+    </TR>
+    <TR>
+     <TC Value="255.255.255.255"/>
+     <TC Value="255.255.255.255"/>
+     <TC Value="on-link"/>
+     <TC Value="11.1.1.3 "/>
+     <TC Value="999"/>
+     <TC Value="BROADCAST"/>
+    </TR>
+    <TR>
+     <TC Value="0.0.0.0"/>
+     <TC Value="0.0.0.0"/>
+     <TC Value="11.1.1.1"/>
+     <TC Value="11.1.1.3 "/>
+     <TC Value="999"/>
+     <TC Value="DEFAULT"/>
+    </TR>
+   </TABLE>
+  </MENU>
+  <MENU Name="ROUTER_4">
+   <TABLE name="ROUTER_4">
+    <TH name="Network Destination" isShow="true"/>
+    <TH name="Netmask/Prefix len" isShow="true"/>
+    <TH name="Gateway" isShow="true"/>
+    <TH name="Interface" isShow="true"/>
+    <TH name="Metrics" isShow="false"/>
+    <TH name="Type" isShow="false"/>
+    <TR>
+     <TC Value="11.2.0.0"/>
+     <TC Value="255.255.0.0"/>
+     <TC Value="on-link"/>
+     <TC Value="11.2.1.1 "/>
+     <TC Value="300"/>
+     <TC Value="LOCAL"/>
+    </TR>
+    <TR>
+     <TC Value="11.1.0.0"/>
+     <TC Value="255.255.0.0"/>
+     <TC Value="on-link"/>
+     <TC Value="11.1.1.1 "/>
+     <TC Value="300"/>
+     <TC Value="LOCAL"/>
+    </TR>
+    <TR>
+     <TC Value="224.0.0.1"/>
+     <TC Value="255.255.255.255"/>
+     <TC Value="on-link"/>
+     <TC Value="11.1.1.1 11.2.1.1 "/>
+     <TC Value="306"/>
+     <TC Value="MULTICAST"/>
+    </TR>
+    <TR>
+     <TC Value="224.0.0.0"/>
+     <TC Value="240.0.0.0"/>
+     <TC Value="on-link"/>
+     <TC Value="11.1.1.1 11.2.1.1 "/>
+     <TC Value="306"/>
+     <TC Value="MULTICAST"/>
+    </TR>
+    <TR>
+     <TC Value="255.255.255.255"/>
+     <TC Value="255.255.255.255"/>
+     <TC Value="on-link"/>
+     <TC Value="11.2.1.1 "/>
+     <TC Value="999"/>
+     <TC Value="BROADCAST"/>
+    </TR>
+    <TR>
+     <TC Value="255.255.255.255"/>
+     <TC Value="255.255.255.255"/>
+     <TC Value="on-link"/>
+     <TC Value="11.1.1.1 "/>
+     <TC Value="999"/>
+     <TC Value="BROADCAST"/>
+    </TR>
+   </TABLE>
+  </MENU>
+  <MENU Name="WIRED_NODE_5">
+   <TABLE name="WIRED_NODE_5">
+    <TH name="Network Destination" isShow="true"/>
+    <TH name="Netmask/Prefix len" isShow="true"/>
+    <TH name="Gateway" isShow="true"/>
+    <TH name="Interface" isShow="true"/>
+    <TH name="Metrics" isShow="false"/>
+    <TH name="Type" isShow="false"/>
+    <TR>
+     <TC Value="11.2.0.0"/>
+     <TC Value="255.255.0.0"/>
+     <TC Value="on-link"/>
+     <TC Value="11.2.1.2 "/>
+     <TC Value="300"/>
+     <TC Value="LOCAL"/>
+    </TR>
+    <TR>
+     <TC Value="224.0.0.1"/>
+     <TC Value="255.255.255.255"/>
+     <TC Value="on-link"/>
+     <TC Value="11.2.1.2 "/>
+     <TC Value="306"/>
+     <TC Value="MULTICAST"/>
+    </TR>
+    <TR>
+     <TC Value="224.0.0.0"/>
+     <TC Value="240.0.0.0"/>
+     <TC Value="on-link"/>
+     <TC Value="11.2.1.2 "/>
+     <TC Value="306"/>
+     <TC Value="MULTICAST"/>
+    </TR>
+    <TR>
+     <TC Value="255.255.255.255"/>
+     <TC Value="255.255.255.255"/>
+     <TC Value="on-link"/>
+     <TC Value="11.2.1.2 "/>
+     <TC Value="999"/>
+     <TC Value="BROADCAST"/>
+    </TR>
+    <TR>
+     <TC Value="0.0.0.0"/>
+     <TC Value="0.0.0.0"/>
+     <TC Value="11.2.1.1"/>
+     <TC Value="11.2.1.2 "/>
+     <TC Value="999"/>
+     <TC Value="DEFAULT"/>
+    </TR>
+   </TABLE>
+  </MENU>
+ </MENU>
+ <MENU Name="UDP Metrics">
+  <TABLE name="UDP Metrics">
+   <TH name="Device id" isShow="true"/>
+   <TH name="Local address" isShow="true"/>
+   <TH name="Foreign address" isShow="true"/>
+   <TH name="Datagram sent" isShow="true"/>
+   <TH name="Datagram received" isShow="true"/>
+   <TR>
+    <TC Value="2"/>
+    <TC Value="11.1.1.2:82"/>
+    <TC Value="11.2.1.2:36934"/>
+    <TC Value="45000"/>
+    <TC Value="0"/>
+   </TR>
+   <TR>
+    <TC Value="5"/>
+    <TC Value="11.2.1.2:36934"/>
+    <TC Value="11.1.1.2:82"/>
+    <TC Value="0"/>
+    <TC Value="43142"/>
+   </TR>
+  </TABLE>
+ </MENU>
+ <MENU Name="CR Metrics">
+  <MENU Name="Base station metrics">
+   <TABLE name="Base Station Metrics">
+    <TH name="BS Id" isShow="true"/>
+    <TH name="Interface id" isShow="true"/>
+    <TH name="SCH sent" isShow="false"/>
+    <TH name="FCH sent" isShow="false"/>
+    <TH name="DSA req received" isShow="false"/>
+    <TH name="DSA rep sent" isShow="false"/>
+    <TH name="DSC req received" isShow="false"/>
+    <TH name="DSC rep sent" isShow="false"/>
+    <TH name="DSD req received" isShow="false"/>
+    <TH name="DSD rep sent" isShow="false"/>
+    <TH name="CHS req sent" isShow="true"/>
+    <TR>
+     <TC Value="1"/>
+     <TC Value="1"/>
+     <TC Value="125"/>
+     <TC Value="1834"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+    </TR>
+   </TABLE>
+  </MENU>
+  <MENU Name="CPE metrics">
+   <TABLE name="CR CPE Metrics">
+    <TH name="CPE Id" isShow="true"/>
+    <TH name="Interface id" isShow="true"/>
+    <TH name="SCH received" isShow="false"/>
+    <TH name="FCH received" isShow="false"/>
+    <TH name="DSA req sent" isShow="false"/>
+    <TH name="DSA rep received" isShow="false"/>
+    <TH name="DSC req sent" isShow="false"/>
+    <TH name="DSC rep received" isShow="false"/>
+    <TH name="DSD req sent" isShow="false"/>
+    <TH name="DSD rep received" isShow="false"/>
+    <TH name="UCS sent" isShow="true"/>
+    <TH name="CHS req received" isShow="true"/>
+    <TR>
+     <TC Value="2"/>
+     <TC Value="1"/>
+     <TC Value="125"/>
+     <TC Value="1834"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="7"/>
+     <TC Value="0"/>
+    </TR>
+    <TR>
+     <TC Value="3"/>
+     <TC Value="1"/>
+     <TC Value="125"/>
+     <TC Value="1834"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="0"/>
+     <TC Value="12"/>
+     <TC Value="0"/>
+    </TR>
+   </TABLE>
+  </MENU>
+  <MENU Name="Incumbent metrics">
+   <TABLE name="CR Incumbent Metrics">
+    <TH name="BS Id" isShow="true"/>
+    <TH name="Incumbent id" isShow="true"/>
+    <TH name="Frequency(MHz)" isShow="true"/>
+    <TH name="Operational time(Microsec)" isShow="true"/>
+    <TH name="Idle time(Microsec)" isShow="true"/>
+    <TH name="Interference time(Microsec)" isShow="true"/>
+    <TR>
+     <TC Value="1"/>
+     <TC Value="1"/>
+     <TC Value="54-60"/>
+     <TC Value="10000000"/>
+     <TC Value="20000000"/>
+     <TC Value="55293"/>
+    </TR>
+    <TR>
+     <TC Value="1"/>
+     <TC Value="2"/>
+     <TC Value="54-60"/>
+     <TC Value="10000000"/>
+     <TC Value="20000000"/>
+     <TC Value="55293"/>
+    </TR>
+    <TR>
+     <TC Value="1"/>
+     <TC Value="3"/>
+     <TC Value="54-60"/>
+     <TC Value="10000000"/>
+     <TC Value="20000000"/>
+     <TC Value="55293"/>
+    </TR>
+   </TABLE>
+  </MENU>
+  <MENU Name="Channel metrics">
+   <TABLE name="CR Channel Metrics">
+    <TH name="BS Id" isShow="true"/>
+    <TH name="Channel number" isShow="true"/>
+    <TH name="Frequency(MHz)" isShow="true"/>
+    <TH name="Spectral efficiency" isShow="true"/>
+    <TR>
+     <TC Value="1"/>
+     <TC Value="1"/>
+     <TC Value="54-60"/>
+     <TC Value="0.20677"/>
+    </TR>
+   </TABLE>
+  </MENU>
+ </MENU>
+ <MENU Name="Application_Metrics">
+  <TABLE name="Application_Metrics">
+   <TH name="Application ID" isShow="true"/>
+   <TH name="Throughput Plot" isShow="true"/>
+   <TH name="Application Name" isShow="true"/>
+   <TH name="Source ID" isShow="false"/>
+   <TH name="Destination ID" isShow="false"/>
+   <TH name="Packets Generated" isShow="true"/>
+   <TH name="Packets Received" isShow="true"/>
+   <TH name="Payload generated (bytes)" isShow="false"/>
+   <TH name="Payload received (bytes)" isShow="false"/>
+   <TH name="Throughput (Mbps)" isShow="true"/>
+   <TH name="Delay (microsec)" isShow="true"/>
+   <TH name="Jitter (microsec)" isShow="true"/>
+   <TR>
+    <TC Value="1"/>
+    <TC>
+     <LINK onClick="App1_CBR_Throughput" name="Application_Throughput_plot"/>
+    </TC>
+    <TC Value="App1_CBR"/>
+    <TC Value="2"/>
+    <TC Value="5"/>
+    <TC Value="45000"/>
+    <TC Value="43142"/>
+    <TC Value="4380000"/>
+    <TC Value="4199160"/>
+    <TC Value="1.119776"/>
+    <TC Value="3688466.929405"/>
+    <TC Value="1014.115773"/>
+   </TR>
+  </TABLE>
+ </MENU>
+<MENU Name="Plots">
+ <MENU Name="Link_Throughput">
+  <MENU Name="Link_1_Throughput (Bi-directional Aggregated)">
+   <PLOT data_file_name="C:\Users\Navya\AppData\Local\Temp\NetSimCoreAuto\plot_Link_1_Throughput (Bi-directional Aggregated).txt" name="Link_1_Throughput (Bi-directional Aggregated)"/>
+  </MENU>
+  <MENU Name="Link_2_Throughput (Bi-directional Aggregated)">
+   <PLOT data_file_name="C:\Users\Navya\AppData\Local\Temp\NetSimCoreAuto\plot_Link_2_Throughput (Bi-directional Aggregated).txt" name="Link_2_Throughput (Bi-directional Aggregated)"/>
+  </MENU>
+  <MENU Name="Link_3_Throughput (Bi-directional Aggregated)">
+   <PLOT data_file_name="C:\Users\Navya\AppData\Local\Temp\NetSimCoreAuto\plot_Link_3_Throughput (Bi-directional Aggregated).txt" name="Link_3_Throughput (Bi-directional Aggregated)"/>
+  </MENU>
+ </MENU>
+ <MENU Name="Application_Throughput">
+  <MENU Name="App1_CBR_Throughput">
+   <PLOT data_file_name="C:\Users\Navya\AppData\Local\Temp\NetSimCoreAuto\plot_App1_CBR_Throughput.txt" name="App1_CBR_Throughput"/>
+  </MENU>
+ </MENU>
+</MENU>
+</NetSim_Metrics>
